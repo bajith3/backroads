@@ -34,7 +34,6 @@
 
 body {
   font-family: "Lato", sans-serif;
-  background: #f0f8ff;
   min-height: 300vh;
 }
 
@@ -92,6 +91,7 @@ body {
 
 .about-section {
   background: var(--clr-white);
+  padding-bottom: 1rem;
 }
 
 .about {
@@ -169,6 +169,26 @@ img {
     font-size: 1rem;
     letter-spacing: 0.1rem;
   }
+
+  .service-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .service-item {
+    flex: 0 0 calc(50% - 1rem);
+  }
+
+  .service-item h3 {
+    font-size: 1rem !important;
+  }
+
+  .service-item p {
+    width: 70% !important;
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -201,6 +221,21 @@ img {
   .about-text p {
     font-size: 1rem;
   }
+
+  .service-item {
+    flex: 0 0 calc(33.3% - 1rem);
+  }
+
+  .service-item h3 {
+    letter-spacing: 0.25rem;
+    font-size: 1.15rem !important;
+    margin-bottom: 1rem;
+  }
+
+  .service-item p {
+    width: 80% !important;
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 1268px) {
@@ -221,4 +256,79 @@ img {
     position: relative;
     z-index: 1;
   }
+
+  .service-content {
+    justify-content: space-around;
+    padding: 0 2rem;
+  }
+
+  .service-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .service-item i {
+    align-self: center;
+  }
+
+  .service-item h3 {
+    text-align: left;
+    width: 90% !important;
+    margin: 0 auto;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .service-item p {
+    text-align: left;
+    width: 90% !important;
+  }
+}
+
+.services {
+  background: #f0f8ff;
+  padding-bottom: 3rem;
+}
+.service-wrapper {
+  max-width: 1268px;
+  margin: 0 auto;
+}
+
+.service-header {
+  text-transform: uppercase;
+  color: var(--clr-heading-8);
+  padding: 3rem 0rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+  text-align: center;
+}
+
+.service-header h2 > span {
+  color: var(--clr-primary-5);
+}
+
+.service-item {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.service-item i {
+  font-size: 2.25rem;
+  background: var(--clr-primary-5);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.service-item h3 {
+  text-transform: capitalize;
+  color: var(--clr-heading-8);
+  letter-spacing: 0.25rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.service-item p {
+  width: 60%;
+  margin: 0 auto;
+  color: var(--clr-heading-5);
 }
