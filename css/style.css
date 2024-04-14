@@ -201,6 +201,16 @@ img {
   .tour-box {
     flex: 0 0 calc(50% - 1.75rem);
   }
+
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .gal-pic {
+    flex: 0 0 50%;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -270,6 +280,10 @@ img {
   .contact-footer {
     align-self: center;
     flex-basis: 45%;
+  }
+
+  .gal-pic {
+    flex: 0 0 25%;
   }
 }
 
@@ -563,4 +577,37 @@ img {
   font-weight: 100;
   letter-spacing: 0.25rem;
   padding: 0.5rem 0rem 0rem 0.75rem;
+}
+
+.gal-pic {
+  position: relative;
+  background: var(--clr-primary-5);
+}
+
+.gal-pic:hover .gal-bg-img {
+  opacity: 0.5;
+}
+
+.gal-pic:hover .gal-bg-hover {
+  opacity: 1;
+}
+
+.gal-bg-img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 15rem;
+  transition: 0.3s all linear;
+}
+
+.gal-bg-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.25rem;
+  color: var(--clr-white);
+  opacity: 0;
+  transition: 0.3s all linear;
+  z-index: 10;
 }
