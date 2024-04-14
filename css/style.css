@@ -248,6 +248,29 @@ img {
     width: 80% !important;
     font-size: 1rem;
   }
+
+  .contact-info-wrapper {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    justify-content: space-between;
+  }
+
+  .contact-content p:nth-child(1) {
+    font-size: 1.75rem !important;
+  }
+
+  .contact-content p:nth-child(2) {
+    font-size: 1rem !important;
+  }
+
+  .contact-content {
+    flex-basis: 55%;
+  }
+  .contact-footer {
+    align-self: center;
+    flex-basis: 45%;
+  }
 }
 
 @media screen and (min-width: 1268px) {
@@ -454,4 +477,90 @@ img {
   align-items: center;
   color: var(--clr-primary-5);
   font-size: 0.9rem;
+}
+
+.all-tours-btn {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.all-tours-btn button {
+  display: inline-block;
+  color: var(--clr-white);
+  background: var(--clr-primary-5);
+  padding: 0.6rem 0.9rem;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s all linear;
+}
+
+.all-tours-btn button:hover {
+  color: var(--clr-heading-8);
+  background: var(--clr-primary-3);
+}
+
+.contact-info {
+  background: var(--clr-primary-5);
+}
+
+.contact-info-wrapper {
+  max-width: 1268px;
+  padding: 0rem 1.5rem;
+  padding-bottom: 5rem;
+  margin: 0 auto;
+}
+
+.contact-content {
+  padding-top: 3rem;
+  padding-bottom: 0.75rem;
+}
+
+.contact-content p:nth-child(1) {
+  color: var(--clr-white);
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.contact-content p:nth-child(2) {
+  color: var(--clr-heading-1);
+}
+
+.contact-footer button {
+  letter-spacing: 0.25rem;
+  font-weight: 400;
+  color: var(--clr-heading-9);
+  background: var(--clr-primary-3);
+  border: none;
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+  transition: 0.3s all linear;
+}
+
+.contact-footer button:hover {
+  color: var(--clr-primary-5);
+  background: var(--clr-heading-8);
+}
+
+.contact-footer {
+  margin-top: 0.8rem;
+}
+
+.contact-footer input {
+  width: 70%;
+  height: 2rem;
+  margin-right: 0.25rem;
+  border: none;
+}
+
+.contact-footer input::placeholder {
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 0.25rem;
+  padding: 0.5rem 0rem 0rem 0.75rem;
 }
