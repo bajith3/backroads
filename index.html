@@ -11,6 +11,47 @@
 </head>
 
 <body>
+    <div id="home" class="roads-header">
+        <div class="roads-header-wrapper">
+            <h2 class="roads-title">
+                Back<span>Roads</span>
+            </h2>
+
+            <nav>
+                <ul class="header-nav-list">
+                    <li><a class="header-links" href="#home">Home</a></li>
+                    <li><a class="header-links" href="#about">About</a></li>
+                    <li><a class="header-links" href="#services">Services</a></li>
+                    <li><a class="header-links" href="#features">Featured</a></li>
+                    <li><a class="header-links" href="#gallery">Gallery</a></li>
+                </ul>
+            </nav>
+            <div class="header-nav-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-discord"></i>
+            </div>
+
+
+
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+        </div>
+        <div class="abs-nav-bar">
+            <ul class="abs-nav-bar-list">
+                <li><a class="header-links" href="#home">Home</a></li>
+                <li><a class="header-links" href="#about">About</a></li>
+                <li><a class="header-links" href="#services">Services</a></li>
+                <li><a class="header-links" href="#features">Featured</a></li>
+                <li><a class="header-links" href="#gallery">Gallery</a></li>
+            </ul>
+        </div>
+    </div>
+
     <div class="hero">
         <div class="hero-content">
             <h1 class="hero-title">continue exploring</h1>
@@ -20,7 +61,7 @@
             <button class="hero-btn">Explore tours</button>
         </div>
     </div>
-    <div class="about-section">
+    <div id="about" class="about-section">
         <div class="about">
             <div class="about-header">About <span class="about-us">us</span></div>
             <div class="about-content">
@@ -38,7 +79,7 @@
             </div>
         </div>
     </div>
-    <div class="services">
+    <div id="services" class="services">
         <div class="service-wrapper">
             <div class="service-header">
                 <h2>our <span>services</span></h2>
@@ -71,7 +112,7 @@
 
     </div>
 
-    <div class="tours">
+    <div id="features" class="tours">
         <div class="tours-wrapper">
             <div class="tours-header">
                 <h2>featured <span>tours</span></h2>
@@ -184,7 +225,7 @@
     </div>
 
     <div class="all-tours-btn">
-        <button>All tours</button>
+        <button class="all-tours" onclick="AllTours()">All tours</button>
     </div>
     <div class="contact-info">
         <div class="contact-info-wrapper">
@@ -200,7 +241,7 @@
 
     </div>
 
-    <div class="gallery">
+    <div id="gallery" class="gallery">
         <div class="gal-pic">
             <div class="gal-bg-hover"><i class="fa-solid fa-search"></i></div>
             <img class="gal-bg-img" src="./images/tour-1.jpeg"></img>
@@ -235,8 +276,30 @@
             <img class="gal-bg-img" src="./images/tour-2.jpeg"></img>
         </div>
     </div>
-</body>
 
+    <div class="footer">
+        <div class="footer-wrapper">
+            <nav>
+                <ul class="footer-nav-list">
+                    <li><a class="header-links" href="#home">Home</a></li>
+                    <li><a class="header-links" href="#about">About</a></li>
+                    <li><a class="header-links" href="#services">Services</a></li>
+                    <li><a class="header-links" href="#features">Featured</a></li>
+                    <li><a class="header-links" href="#gallery">Gallery</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-discord"></i>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; Backroads travel tours company 2024. all rights reserved</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script/app.js"></script>
 
 
 </html>
